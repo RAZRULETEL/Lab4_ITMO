@@ -33,7 +33,6 @@ public class Money extends Finances implements Putable {
 
         this.amount += lost;
         lost = this.amount;
-        System.out.println(lost);
         int[] newBanknotes = new int[(lost-lost%100)/100+lost%100+1];
         int i = 0;
         while (lost >= 0) {

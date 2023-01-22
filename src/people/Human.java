@@ -83,13 +83,12 @@ public class Human {
         location = drive;
     }
     public void putInStorage(Putable what, IStorage closet){
-        String out = this.name+" положил деньги в ";
+        String out = this.name+" положил "+what+" в "+closet;
         out += closet.toString()+" ";
         out += what;
         System.out.println(out);
         closet.addItem(what);
         this.ownMoney = null;
-        System.out.println("changed");
     }
     public void exchangeMoney(){
         System.out.println(this.name+" объменивал мелкие деньги на крупные");
